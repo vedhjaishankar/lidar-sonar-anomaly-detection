@@ -2,7 +2,7 @@
 
 A PyTorch-based pipeline for per-point semantic segmentation of man-made anomalies in synthetic underwater sonar/LiDAR point cloud scenes. The model identifies and localizes objects (cubes, spheres, cylinders) resting on a natural seabed using a **PointNet++ architecture with Feature Propagation** modules.
 
-Developed as a capstone project for an uncrewed surface vessel (USV) anomaly detection system.
+Developed as a capstone project for Merlion Advisory Group.
 
 ---
 
