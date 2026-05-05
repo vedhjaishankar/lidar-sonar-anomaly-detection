@@ -1,50 +1,55 @@
-# Python
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# Virtual Environment
-venv/
+# ── Virtual environments ───────────────────────────────────────────────────────
 .venv/
+venv/
+env/
 ENV/
 
-# IDEs
+# ── Build / packaging ──────────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Project Specific
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Generated data (never commit large binaries) ──────────────────────────────
 data/
 mock_data/
+data_generation/runs/
+
+# ── Large binary assets ───────────────────────────────────────────────────────
+*.npy
+*.las
+*.ply
+*.blend
+*.blend1
+
+# ── Model weights & checkpoints ───────────────────────────────────────────────
 checkpoints/
 *.pth
 *.pt
-*.npy
-*.csv
-!tests/*.py
-!src/*.py
-!README.md
-!requirements.txt
 
-# OS
-.DS_Store
-Thumbs.db
+# ── Generated evaluation outputs ──────────────────────────────────────────────
+src/evaluation_visuals/
+
+# ── Generated plot images (kept in results/ folder if committed intentionally) -
+# To commit plots, run: git add -f results/
+*.png
+
+# ── Jupyter notebook checkpoints ──────────────────────────────────────────────
+.ipynb_checkpoints/
